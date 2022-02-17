@@ -14,11 +14,11 @@ const NotFound = () => {
       }
     }, 1000);
     return () => null;
-  }, [time]);
+  }, []);
   return (
     <>
       <Head>
-        <title>Ninja list | 404 </title>
+        <title>Ninja list | 404 Page </title>
       </Head>
       <div className='not-found'>
         <h1>Oops...</h1>
