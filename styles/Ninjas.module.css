@@ -1,0 +1,15 @@
+.single {
+  padding: 2px 16px;
+  background: #fff;
+  display: block;
+  margin: 20px 10px;
+  border-left: 8px solid #fff;
+  transition: all 850ms ease-in;
+  -webkit-transition: all 430ms ease-in;
+  -moz-transition: all 850ms ease-in;
+  -ms-transition: all 850ms ease-in;
+  -o-transition: all 850ms ease-in;
+}
+.single:hover {
+  border-left: 8px solid #4979ff;
+}
