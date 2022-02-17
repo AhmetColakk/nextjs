@@ -4,17 +4,16 @@ import { useEffect, useState } from 'react';
 import useRouter from 'next/router';
 const NotFound = () => {
   const [time, setTime] = useState(0);
-
-  useEffect(() => {
+  const timer = () => {
+    if (time > 3) useRouter.push('/');
     setInterval(() => {
-      if (time < 3) {
-        setTime(time + 1);
-      } else {
-        useRouter.push('/');
-      }
+      setTime(time + 1);
     }, 1000);
+  };
+  useEffect(() => {
+    timer();
     return () => null;
-  }, []);
+  }, [time]);
   return (
     <>
       <Head>
